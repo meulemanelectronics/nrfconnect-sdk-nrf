@@ -19,8 +19,7 @@ manifest:
     # nRF Connect SDK GitHub organization.
     # NCS repositories are hosted here.
     - name: ncs
-      url-base: https://github.com/meulemanelectronics
-    # url-base: https://github.com/nrfconnect
+      url-base: https://github.com/nrfconnect
     # Third-party repository sources:
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
@@ -36,7 +35,9 @@ manifest:
       url-base: https://github.com/PelionIoT
     - name: memfault
       url-base: https://github.com/memfault
-
+    # Sensorfy repository
+    - name: meuleman
+      url-base: https://github.com/meulemanelectronics
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
   defaults:
@@ -54,6 +55,7 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/introduction/index.html
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
+      remote: meuleman
       repo-path: nrfconnect-sdk-zephyr
       revision: v2.7.0-ncs1
       import:
